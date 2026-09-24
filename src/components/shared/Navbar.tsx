@@ -75,7 +75,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-md font-bold">
             <Image src={logo} alt="FitLog logo" width={25} />
-            <span className="text-[18px] uppercase">FitLog</span>
+            <span className="text-[18px] uppercase hidden sm:block">
+              FitLog
+            </span>
           </Link>
         </div>
 
@@ -91,8 +93,8 @@ const Navbar = () => {
             className="flex items-center gap-2 rounded-full px-2 py-1 font-normal transition-colors text-[16px] text-[#9CA3AF] hover:bg-[#1C1F26] hover:text-white"
           >
             Plan{" "}
-            <span className="rounded-full px-[8px] text-black bg-[#C2F800]">
-              0
+            <span className="flex min-w-7 items-center justify-center rounded-full bg-[#C2F800] px-2 text-black">
+              10
             </span>
           </Link>
           <Link
@@ -100,7 +102,7 @@ const Navbar = () => {
             className="flex items-center gap-2 rounded-full px-2 py-1 font-normal transition-colors text-[16px] text-[#9CA3AF] hover:bg-[#1C1F26] hover:text-white"
           >
             Saved
-            <span className="rounded-full outline outline-[#2d313bd3] px-[8px] text-white ">
+            <span className="flex min-w-7 items-center justify-center rounded-full border border-[#2D313B] px-2 text-white">
               0
             </span>
           </Link>
