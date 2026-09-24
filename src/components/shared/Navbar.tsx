@@ -94,7 +94,7 @@ const Navbar = () => {
           >
             Plan{" "}
             <span className="flex min-w-7 items-center justify-center rounded-full bg-[#C2F800] px-2 text-black">
-              10
+              0
             </span>
           </Link>
           <Link
