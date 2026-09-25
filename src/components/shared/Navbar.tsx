@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import logo from "@/assets/logo.png";
+import PlanCount from "../workouts/PlanCount";
+import SavedCount from "../workouts/SavedCount";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -75,7 +77,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-md font-bold">
             <Image src={logo} alt="FitLog logo" width={25} />
-            <span className="text-[18px] uppercase hidden sm:block">
+            <span className="text-[18px] uppercase hidden heading sm:block">
               FitLog
             </span>
           </Link>
@@ -92,19 +94,14 @@ const Navbar = () => {
             href="/my-plan"
             className="flex items-center gap-2 rounded-full px-2 py-1 font-normal transition-colors text-[16px] text-[#9CA3AF] hover:bg-[#1C1F26] hover:text-white"
           >
-            Plan{" "}
-            <span className="flex min-w-7 items-center justify-center rounded-full bg-[#C2F800] px-2 text-black">
-              0
-            </span>
+            Plan <PlanCount></PlanCount>
           </Link>
           <Link
             href="/my-plan"
             className="flex items-center gap-2 rounded-full px-2 py-1 font-normal transition-colors text-[16px] text-[#9CA3AF] hover:bg-[#1C1F26] hover:text-white"
           >
             Saved
-            <span className="flex min-w-7 items-center justify-center rounded-full border border-[#2D313B] px-2 text-white">
-              0
-            </span>
+            <SavedCount></SavedCount>
           </Link>
         </div>
       </div>

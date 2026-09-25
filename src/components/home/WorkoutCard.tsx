@@ -37,7 +37,7 @@ const WorkoutCard = ({ workout }: IWorkoutCardProps) => {
         </div>
 
         {/* Workout name */}
-        <h2 className=" text-[18px] text-lg font-bold">{workout.name}</h2>
+        <h2 className=" text-[18px] text-lg font-bold heading">{workout.name}</h2>
 
         {/* Equipment */}
         <p className="mb-4 text-sm text-[#9CA3AF]">{workout.equipment}</p>

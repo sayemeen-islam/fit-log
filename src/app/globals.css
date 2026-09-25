@@ -4,3 +4,7 @@
 body{
   background: #0C0D1095;
 }
+
+.heading{
+  font-family: var(--font-oswald);
+}
