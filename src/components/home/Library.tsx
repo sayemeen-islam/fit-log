@@ -10,7 +10,7 @@ const Library = async() => {
   
   return (
     <section id='library' className='w-full max-w-7xl mx-auto px-4 mt-15 mb-18'>
-      <h2 className='text-2xl heading md:text-3xl xl:text-4xl font-bold tracking-tight'>THE LIBRARY</h2>
+      <h2 className='text-2xl heading md:text-3xl xl:text-4xl font-bold tracking-tight '>THE LIBRARY</h2>
       <p className='text-[#9CA3AF] text-sm tracking-normal sm:text-[16px]'>Twelve lifts covering every major muscle group.</p>
       
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
