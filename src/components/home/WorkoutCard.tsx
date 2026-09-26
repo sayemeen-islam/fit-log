@@ -13,7 +13,7 @@ const WorkoutCard = ({ workout }: IWorkoutCardProps) => {
   return (
     <article className="overflow-hidden rounded-2xl border border-[#222630] bg-[#1C1F26]">
       {/* Image */}
-      <div className="relative aspect-[16/10]">
+      <div className="relative aspect-16/10">
         <Image
           src={workout.image}
           alt={workout.name}

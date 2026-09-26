@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import logo from "@/assets/logo.png";
-import PlanCount from "../workouts/PlanCount";
-import SavedCount from "../workouts/SavedCount";
+import PlanCount from "../my-plan/PlanCount";
+import SavedCount from "../my-plan/SavedCount";
 
 const Navbar = () => {
   const pathname = usePathname();
