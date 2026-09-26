@@ -19,10 +19,10 @@ const AddPlanButton = ({ workout }: { workout: IWorkout }) => {
 
   return (
     <button
-      className="btn  rounded-xl bg-[#C2F800] text-[#0C0D10] hover:bg-[#c2f800c4]"
+      className=" flex items-center justify-center gap-1 px-4 py-2 rounded-xl bg-[#C2F800] text-[#0C0D10] hover:bg-[#c2f800c4]"
       onClick={handleAddPlanButton}
     >
-      <LuCalendarPlus2 /> Add to today&apos;s plan
+      <LuCalendarPlus2 /> <span>Add to today&apos;s plan</span>
     </button>
   );
 };

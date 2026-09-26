@@ -19,10 +19,11 @@ const SavedButton = ({ workout }: { workout: IWorkout }) => {
 
   return (
     <button
-      className="flex items-center gap-1 rounded-xl border border-[#222630] bg-[#222630] px-4 py-1.5 text-white transition hover:border-[#9CA3AF] hover:bg-[#2D323D]"
+      className="flex items-center justify-center gap-1 rounded-xl border border-[#222630] bg-[#222630] px-4 py-2 text-white transition hover:border-[#9CA3AF] hover:bg-[#2D323D]"
       onClick={handleSavedButton}
     >
-      <FaRegBookmark size={13}/> <span className="text-sm">Save for later</span>
+      <FaRegBookmark size={13} />{" "}
+      <span className="text-sm">Save for later</span>
     </button>
   );
 };
