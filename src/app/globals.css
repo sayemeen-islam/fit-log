@@ -1,13 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body{
+body {
   background: #0C0D10;
-  color:white
+  color: white
 }
 
-.heading{
+.heading {
   font-family: var(--font-oswald);
 }
-
-

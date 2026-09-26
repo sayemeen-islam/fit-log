@@ -12,7 +12,8 @@ const Banner = () => {
         </p>
 
         <h1 className="text-3xl heading font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
-          Train with intent. Log<br /> every set.
+          Train with intent. Log
+          <br /> every set.
         </h1>
 
         <p className="mt-4 max-w-xl text-sm leading-6 text-[#9CA3AF] sm:mt-5 sm:text-base sm:leading-7 lg:text-lg">

@@ -1,5 +1,5 @@
 import { workoutContext } from "@/context/WorkoutProvider";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FaCheck } from "react-icons/fa";
 import { toast } from "react-toastify";
 interface MarkAsDoneButtonProps {

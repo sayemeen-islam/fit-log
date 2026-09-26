@@ -5,9 +5,6 @@ import React from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { PiFireSimpleFill } from "react-icons/pi";
-import { RxCross2 } from "react-icons/rx";
-import PlanCardButton from "./PlanRemoveButton";
-import SavedCardButton from "./SavedRemoveButton";
 import PlanRemoveButton from "./PlanRemoveButton";
 import SavedRemoveButton from "./SavedRemoveButton";
 import MarkAsDoneButton from "./MarkAsDoneButton";
@@ -40,17 +37,17 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
         {/* Stats */}
         <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-[#9CA3AF]">
           <span className="flex items-center gap-1.5">
-            <IoTimeOutline size={16}  className="text-[#C2F800]"/>
+            <IoTimeOutline size={16} className="text-[#C2F800]" />
             {workout.duration} min
           </span>
 
           <span className="flex items-center gap-1.5">
-            <PiFireSimpleFill size={16} className="text-[#C2F800]"/>
+            <PiFireSimpleFill size={16} className="text-[#C2F800]" />
             {workout.caloriesBurned} kcal
           </span>
 
           <span className="flex items-center gap-1.5">
-            <MdOutlineStarOutline size={16} className="text-[#C2F800]"/>
+            <MdOutlineStarOutline size={16} className="text-[#C2F800]" />
             {workout.rating}
           </span>
         </div>
@@ -65,9 +62,11 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
           View Details
         </Link>
 
-        {
-          isSelected === `Today's Plan` ? <MarkAsDoneButton workoutId={workout.id} /> : <></>
-        }
+        {isSelected === `Today's Plan` ? (
+          <MarkAsDoneButton workoutId={workout.id} />
+        ) : (
+          <></>
+        )}
 
         {isSelected === `Today's Plan` ? (
           <PlanRemoveButton workout={workout}></PlanRemoveButton>

@@ -1,12 +1,7 @@
 "use client";
 
 import { IWorkout } from "@/types/workouts.type";
-import React, {
-  createContext,
-  ReactNode,
-  useState,
-  useEffect,
-} from "react";
+import React, { createContext, ReactNode, useState, useEffect } from "react";
 
 interface IWorkoutContext {
   plan: IWorkout[];
@@ -29,14 +24,11 @@ export const workoutContext = createContext<IWorkoutContext>({
 });
 
 const WorkoutProvider = ({ children }: { children: ReactNode }) => {
-
   const [plan, setPlan] = useState<IWorkout[]>([]);
   const [saved, setSaved] = useState<IWorkout[]>([]);
   const [completedIds, setCompletedIds] = useState<number[]>([]);
 
-
   const [isLoaded, setIsLoaded] = useState(false);
-
 
   useEffect(() => {
     const storedPlan = localStorage.getItem("fitlog-plan");
@@ -55,10 +47,8 @@ const WorkoutProvider = ({ children }: { children: ReactNode }) => {
       setCompletedIds(JSON.parse(storedCompleted));
     }
 
-
     setIsLoaded(true);
   }, []);
-
 
   useEffect(() => {
     if (!isLoaded) return;
@@ -66,21 +56,16 @@ const WorkoutProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("fitlog-plan", JSON.stringify(plan));
   }, [plan, isLoaded]);
 
-
   useEffect(() => {
     if (!isLoaded) return;
 
     localStorage.setItem("fitlog-saved", JSON.stringify(saved));
   }, [saved, isLoaded]);
 
-
   useEffect(() => {
     if (!isLoaded) return;
 
-    localStorage.setItem(
-      "fitlog-completed",
-      JSON.stringify(completedIds)
-    );
+    localStorage.setItem("fitlog-completed", JSON.stringify(completedIds));
   }, [completedIds, isLoaded]);
 
   const contextValue = {
@@ -101,4 +86,3 @@ const WorkoutProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export default WorkoutProvider;
-

@@ -10,10 +10,10 @@ const AddPlanButton = ({ workout }: { workout: IWorkout }) => {
   const handleAddPlanButton = () => {
     const foundWorkout = plan.find((elem: IWorkout) => elem.id === workout.id);
     if (foundWorkout) {
-      toast.error("Already in your plan",{theme:"dark"})
+      toast.error("Already in your plan", { theme: "dark" });
     } else {
       setPlan([...plan, workout]);
-      toast.success("Added to today's plan",{theme:"dark"});
+      toast.success("Added to today's plan", { theme: "dark" });
     }
   };
 

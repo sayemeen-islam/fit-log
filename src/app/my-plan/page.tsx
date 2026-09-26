@@ -5,7 +5,7 @@ import { workoutContext } from "@/context/WorkoutProvider";
 import { IWorkout } from "@/types/workouts.type";
 import Link from "next/link";
 import { useContext, useState } from "react";
-import { IoChevronDownSharp, IoChevronUpSharp } from "react-icons/io5";
+import { IoChevronDownSharp } from "react-icons/io5";
 
 const MyPlanPage = () => {
   const { plan, saved } = useContext(workoutContext);

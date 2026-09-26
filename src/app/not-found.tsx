@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const NotFound = () => {
@@ -9,7 +8,7 @@ const NotFound = () => {
           ERROR 404
         </p>
 
-        <h1 className="heading mt-3 text-7xl font-bold tracking-tight text-white sm:text-8xl">
+        <h1 className="heading mt-3 text-7xl font-bold tracking-tight text-white sm:text-8xl heading">
           404
         </h1>
 
@@ -29,4 +28,3 @@ const NotFound = () => {
 };
 
 export default NotFound;
-
