@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { IWorkout } from "@/types/workouts.type";
 import React, { createContext, ReactNode, useState } from "react";
 
@@ -16,16 +16,22 @@ export const workoutContext = createContext<IWorkoutContext>({
   setSaved: () => {},
 });
 
-const WorkoutProvider = ({children}:{children:ReactNode}) => {
- 
-  const [plan,setPlan]=useState<IWorkout[]>([])
-  const [saved,setSaved]=useState<IWorkout[]>([])
+const WorkoutProvider = ({ children }: { children: ReactNode }) => {
+  const [plan, setPlan] = useState<IWorkout[]>([]);
+  const [saved, setSaved] = useState<IWorkout[]>([]);
 
-  const contextValue={
-    plan,setPlan,saved,setSaved
-  }
+  const contextValue = {
+    plan,
+    setPlan,
+    saved,
+    setSaved,
+  };
 
-  return <workoutContext.Provider value={contextValue}>{children}</workoutContext.Provider>;
+  return (
+    <workoutContext.Provider value={contextValue}>
+      {children}
+    </workoutContext.Provider>
+  );
 };
 
 export default WorkoutProvider;

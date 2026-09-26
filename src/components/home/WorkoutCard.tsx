@@ -45,14 +45,14 @@ const WorkoutCard = ({ workout }: IWorkoutCardProps) => {
         {/* Stats */}
         <div className="flex items-center gap-4 text-sm text-[#9CA3AF] pt-1.5 border-t border-[#20242E]">
           <span className="flex items-center gap-1">
-            <IoTimeOutline />
+            <IoTimeOutline size={18}/>
             <span>{workout.duration} min</span>
           </span>
           <span className="flex items-center gap-1">
-            <PiFireSimpleFill />
+            <PiFireSimpleFill size={18}/>
             <span>{workout.caloriesBurned} kcal</span>
           </span>
-          <span className="flex items-center gap-1"><MdOutlineStarOutline /><span>{workout.rating}</span></span>
+          <span className="flex items-center gap-1"><MdOutlineStarOutline size={18}/><span>{workout.rating}</span></span>
         </div>
       </div>
     </article>

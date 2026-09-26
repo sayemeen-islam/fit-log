@@ -71,32 +71,28 @@ const MyPlanPage = () => {
             Sort By
           </p>
 
-       
-            <div className="relative ">
-              <select
-                value={sortBy}
-                onChange={(e) => {
-                  setSortBy(
-                    e.target.value as "Duration" | "Calories" | "Rating",
-                  );
-                }}
-                className="w-full appearance-none rounded-lg border border-[#222630] bg-[#13161D] px-4 py-2.5 pr-10 text-sm text-[#9CA3AF] outline-none "
+          <div className="relative ">
+            <select
+              value={sortBy}
+              onChange={(e) => {
+                setSortBy(e.target.value as "Duration" | "Calories" | "Rating");
+              }}
+              className="w-full appearance-none rounded-lg border border-[#222630] bg-[#13161D] px-4 py-2.5 pr-10 text-sm text-[#9CA3AF] outline-none "
+            >
+              <option
+                className="hover:bg-[#13161D] text-[#9CA3AF]"
+                value="Duration"
               >
-                <option
-                  className="hover:bg-[#13161D] text-[#9CA3AF]"
-                  value="Duration"
-                >
-                  Duration
-                </option>
-                <option value="Calories">Calories</option>
-                <option value="Rating">Rating</option>
-              </select>
+                Duration
+              </option>
+              <option value="Calories">Calories</option>
+              <option value="Rating">Rating</option>
+            </select>
 
-              <IoChevronDownSharp className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-[#9CA3AF]" />
-            </div>
+            <IoChevronDownSharp className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-[#9CA3AF]" />
           </div>
         </div>
-  
+      </div>
 
       {/* Workout List */}
       {isSelected === "Today's Plan" ? (

@@ -65,7 +65,9 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
           View Details
         </Link>
 
-        <MarkAsDoneButton></MarkAsDoneButton>
+        {
+          isSelected === `Today's Plan` ? <MarkAsDoneButton></MarkAsDoneButton> : <></>
+        }
 
         {isSelected === `Today's Plan` ? (
           <PlanRemoveButton workout={workout}></PlanRemoveButton>

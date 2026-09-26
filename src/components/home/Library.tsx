@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Library = async() => {
   const data= await getAllWorkouts()
-  console.log(data,'from library');
+
   
   return (
     <section id='library' className='w-full max-w-7xl mx-auto px-4 mt-15 mb-18'>
