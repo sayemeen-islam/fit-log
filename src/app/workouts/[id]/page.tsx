@@ -6,14 +6,12 @@ import Image from "next/image";
 import React from "react";
 
 interface IWorkoutDetailsProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 const WorkoutDetailsPage = async ({ params }: IWorkoutDetailsProps) => {
   const { id } = await params;
   const data = await getAllWorkouts();
-  const workout: IWorkout = data.find(
-    (workout: IWorkout) => id === String(workout.id),
-  );
+  const workout = data.find((workout: IWorkout) => id === String(workout.id));
   console.log(workout, "from workout details page");
 
   return (
