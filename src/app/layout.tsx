@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
+import { Inter, Oswald, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import WorkoutProvider from "@/context/WorkoutProvider";
 import { ToastContainer } from "react-toastify";
+
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const oswald = Oswald({
   variable: "--font-oswald",

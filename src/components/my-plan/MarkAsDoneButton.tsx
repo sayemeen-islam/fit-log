@@ -10,7 +10,7 @@ const MarkAsDoneButton = () => {
   };
   return (
     <button
-      className="flex items-center gap-2 rounded-full bg-[#C2F800] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#c2f800c9] hover:cursor-pointer"
+      className={`flex items-center gap-2 rounded-full bg-[#C2F800] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#c2f800c9] hover:cursor-pointer ${isMarked ? 'btn-disabled':''}`}
       onClick={handleMarkAsDone}
     >
       <FaCheck />
