@@ -12,7 +12,7 @@ const Stats = ({workouts}:{workouts:IWorkout[]}) => {
       {/* Exercises */}
       <div className=" ">
         <p className="text-sm text-[#9CA3AF]">Exercises</p>
-        <p className="mt-2 text-3xl font-bold text-[#C2F800]">
+        <p className="mt-2 text-3xl font-bold text-[#C2F800] heading">
           {workouts.length}
         </p>
       </div>
@@ -20,13 +20,13 @@ const Stats = ({workouts}:{workouts:IWorkout[]}) => {
       {/* Minutes */}
       <div className="border-t border-[#222630] pt-5 sm:border-t-0 sm:border-l sm:border-[#222630] sm:pl-5">
         <p className="text-sm text-[#9CA3AF]">Minutes</p>
-        <p className="mt-2 text-3xl font-bold text-white">{totalMinutes}</p>
+        <p className="mt-2 text-3xl font-bold text-white heading">{totalMinutes}</p>
       </div>
 
       {/* Calories */}
       <div className="border-t border-[#222630] pt-5 sm:border-t-0 sm:border-l sm:border-[#222630] sm:pl-5">
-        <p className="text-sm text-[#9CA3AF]">Calories</p>
-        <p className="mt-2 text-3xl font-bold text-white">{totalCalories}</p>
+        <p className="text-sm text-[#9CA3AF] ">Calories</p>
+        <p className="mt-2 text-3xl font-bold text-white heading">{totalCalories}</p>
       </div>
     </section>
   );

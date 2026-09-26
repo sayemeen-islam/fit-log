@@ -11,7 +11,7 @@ const PlanRemoveButton = ({workout}:{workout:IWorkout}) => {
    
    const changedPlan=plan.filter((elem:IWorkout)=>elem.id!==newWorkout.id)
    setPlan([...changedPlan])
-   toast.warning('Workout is removed')
+   toast.success(`Removed from today's plan`,{theme:"dark"})
   }
   return (
             <button

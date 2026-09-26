@@ -10,10 +10,10 @@ const SavedButton = ({ workout }: { workout: IWorkout }) => {
   const handleSavedButton = () => {
        const foundWorkout = saved.find((elem: IWorkout) => elem.id === workout.id);
        if (foundWorkout) {
-         toast.info("Already in saved plan")
+         toast.error("Already saved",{theme:"dark"})
        } else {
          setSaved([...saved, workout]);
-         toast.success("Added to saved plan");
+         toast.success("Saved for later",{theme:"dark"});
        }
   };
 

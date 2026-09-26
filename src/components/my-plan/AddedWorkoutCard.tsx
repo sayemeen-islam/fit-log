@@ -31,7 +31,7 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
 
       {/* Content */}
       <div className="min-w-0 flex-1">
-        <h2 className="text-lg font-bold tracking-wide uppercase text-white">
+        <h2 className="text-lg font-bold tracking-wide uppercase text-white heading">
           {workout.name}
         </h2>
 
@@ -40,17 +40,17 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
         {/* Stats */}
         <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-[#9CA3AF]">
           <span className="flex items-center gap-1.5">
-            <IoTimeOutline size={16} />
+            <IoTimeOutline size={16}  className="text-[#C2F800]"/>
             {workout.duration} min
           </span>
 
           <span className="flex items-center gap-1.5">
-            <PiFireSimpleFill size={16} />
+            <PiFireSimpleFill size={16} className="text-[#C2F800]"/>
             {workout.caloriesBurned} kcal
           </span>
 
           <span className="flex items-center gap-1.5">
-            <MdOutlineStarOutline size={16} />
+            <MdOutlineStarOutline size={16} className="text-[#C2F800]"/>
             {workout.rating}
           </span>
         </div>
@@ -66,7 +66,7 @@ const AddedWorkoutCard = ({ workout, isSelected }: IAddedWorkoutCardProps) => {
         </Link>
 
         {
-          isSelected === `Today's Plan` ? <MarkAsDoneButton></MarkAsDoneButton> : <></>
+          isSelected === `Today's Plan` ? <MarkAsDoneButton workoutId={workout.id} /> : <></>
         }
 
         {isSelected === `Today's Plan` ? (

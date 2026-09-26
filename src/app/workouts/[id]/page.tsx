@@ -2,11 +2,16 @@ import AddPlanButton from "@/components/workouts/AddPlanButton";
 import SavedButton from "@/components/workouts/SavedButton";
 import { getAllWorkouts } from "@/lib/Workout";
 import { IWorkout } from "@/types/workouts.type";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import { FaRegBookmark } from "react-icons/fa";
 import { GoBookmark } from "react-icons/go";
 import { LuCalendarPlus2 } from "react-icons/lu";
+
+
+
+
 interface IWorkoutDetailsProps {
   params: { id: string };
 }
@@ -34,7 +39,7 @@ const WorkoutDetailsPage = async ({ params }: IWorkoutDetailsProps) => {
       {/* Right — Details */}
       <div className="flex flex-col">
         {/* Title + description */}
-        <h1 className="text-3xl font-bold uppercase sm:text-4xl">
+        <h1 className="text-3xl font-bold uppercase sm:text-4xl heading">
           {workout.name}
         </h1>
 

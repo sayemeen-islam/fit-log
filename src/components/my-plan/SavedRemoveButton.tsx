@@ -11,7 +11,7 @@ const SavedRemoveButton = ({ workout }: { workout: IWorkout }) => {
       (elem: IWorkout) => elem.id !== newWorkout.id,
     );
     setSaved([...changedSave]);
-    toast.warning('Workout is removed')
+    toast.success('Removed from saved workouts',{theme:"dark"})
   };
 
   return (

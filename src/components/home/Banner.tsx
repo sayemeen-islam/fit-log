@@ -33,7 +33,7 @@ const Banner = () => {
           src={bannerImage}
           alt="Workout"
           priority
-          className="h-auto   object-contain max-w-full "
+          className="h-auto   object-contain  lg:w-95 "
         />
       </div>
     </section>
