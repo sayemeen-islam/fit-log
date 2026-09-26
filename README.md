@@ -1,10 +1,10 @@
-# 🏋️‍♂️ FitLog — Workout Library
+# 🏋️‍♂️ Fit Log
 
-FitLog is a dark, responsive workout companion that helps users explore workouts, create a daily plan, save workouts, and track workout progress.
+Fit Log is a dark, responsive workout companion that helps users explore workouts, create a daily plan, save workouts, and track workout progress
 
 ## 🔗 Live Link
 
-[**View FitLog Live →**](https://fit-log-track.vercel.app/)
+[**View Fit Log Live →**](https://fit-log-track.vercel.app/)
 
 ## 🛠️ Technologies Used
 

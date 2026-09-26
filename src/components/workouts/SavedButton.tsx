@@ -19,7 +19,7 @@ const SavedButton = ({ workout }: { workout: IWorkout }) => {
 
   return (
     <button
-      className="btn  rounded-xl border border-[#222630] hover:border-[#9CA3AF]  transition"
+      className="btn  rounded-xl border border-[#222630] bg-[#374151] hover:border-[#9CA3AF]  transition"
       onClick={handleSavedButton}
     >
       <FaRegBookmark /> Save for later
