@@ -12,6 +12,7 @@ Fit Log is a dark, responsive workout companion that helps users explore workout
 - React
 - TypeScript
 - Tailwind CSS
+- DaisyUI
 - React Context API
 - React Icons
 - React Toastify
